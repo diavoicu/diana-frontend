@@ -1,0 +1,19 @@
+label {
+    color: skyblue;
+}
+
+[type="text"] {
+    border-color: green;
+}
+
+[type="email"] {
+    background-color: blue;
+}
+
+[type="submit"] {
+    background-color: green;
+}
+
+body {
+    background-color: salmon;
+  }
