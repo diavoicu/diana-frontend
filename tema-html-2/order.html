@@ -2,19 +2,44 @@
 <html lang="en">
     <head>
         <title>Pizza Order</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <form action="/" method="get">
             <fieldset>
                 <legend>Pizza Order</legend>
-                    <input type="text" name="name" placeholder="Enter your name..." pattern=".{3,10}" required>
+                    <label for="name">Your name: </label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    pattern=".{3,10}"
+                    required>
                     <br>
-                    <input type="email" name="email" placeholder="Enter your email..." required>
+                    <br>
+                    <label for="email">Your email: </label>
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required>
+                    <br>
                     <br>
                     Topping:
-                    <input type="radio" name="radio" value="supreme" checked>Supreme
-                    <input type="radio" name="radio" value="vegetarian">Vegetarian
-                    <input type="radio" name="radio" value="hawaiian">Hawaiian
+                    <input
+                    type="radio"
+                    name="radio"
+                    value="supreme"
+                    checked>Supreme
+                    <input
+                    type="radio"
+                    name="radio"
+                    value="vegetarian">Vegetarian
+                    <input
+                    type="radio"
+                    name="radio"
+                    value="hawaiian">Hawaiian
+                    <br>
                     <br>
                     Sauce:
                     <select name="select">
@@ -23,23 +48,53 @@
                         <option value="special">Special</option>
                     </select>
                     <br>
+                    <br>
                     Extras:
-                    <input type="checkbox" name="checkbox1" value="cheese">Cheese
-                    <input type="checkbox" name="checkbox2" value="onions">Onions
-                    <input type="checkbox" name="checkbox3" value="olives">Olives
+                    <input
+                    type="checkbox"
+                    name="checkbox1"
+                    value="cheese">Cheese
+                    <input
+                    type="checkbox"
+                    name="checkbox2"
+                    value="onions">Onions
+                    <input
+                    type="checkbox"
+                    name="checkbox3"
+                    value="olives">Olives
+                    <br>
                     <br>
                     Quantity:
-                    <input type="number" name="number" min="1" max="7" value="1">
+                    <input
+                    type="number"
+                    name="number"
+                    min="1"
+                    max="7"
+                    value="1">
+                    <br>
                     <br>
                     Delivery date:
-                    <input type="date" name="date">
+                    <input
+                    type="date"
+                    name="date">
                     <br>
-                    Delivery instructions:
                     <br>
-                    <textarea name="textarea" id="textarea" rows="5" cols="50" required></textarea>
+                    <label for="textarea">Delivery instructions:</label>
                     <br>
-                    <input type="submit" value="Send Order">
-                    <input type="reset" value="Reset">
+                    <textarea
+                    name="textarea"
+                    id="textarea"
+                    rows="5"
+                    cols="50"
+                    required></textarea>
+                    <br>
+                    <br>
+                    <input
+                    type="submit"
+                    value="Send Order">
+                    <input
+                    type="reset"
+                    value="Reset">
             </fieldset>
         </form>
     </body>
